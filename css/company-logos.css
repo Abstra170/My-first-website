@@ -1,0 +1,31 @@
+.company-logos {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.company-logos .logo-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.logo-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.logo-grid img {
+  height: 50px;
+  max-width: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-grid img:hover {
+  transform: scale(1.1);
+}

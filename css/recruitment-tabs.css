@@ -1,0 +1,166 @@
+body {
+  margin-top: 100px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.recruitment-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://img.freepik.com/free-photo/business-team-meeting-board-room_53876-25060.jpg")
+      center/cover no-repeat;
+  padding: 100px 60px 180px;
+  color: white;
+  position: relative;
+}
+
+.recruitment-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.left-panel {
+  width: 48%;
+}
+
+.left-panel p {
+  color: #7ff27f;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.left-panel h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.right-panel {
+  width: 48%;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.tab {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 5px;
+  position: relative;
+  transition: color 0.3s ease;
+  color: #ccc;
+  border-bottom: 2px solid transparent;
+}
+
+.tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #7ff27f;
+  transition: width 0.3s ease;
+}
+
+.tab:hover {
+  color: #ffffff;
+}
+
+.tab:hover::after,
+.tab.active::after {
+  width: 100%;
+}
+
+.tab.active {
+  color: #ffffff;
+  border-color: #7ff27f;
+}
+
+.info-box {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.info-box img {
+  width: 150px;
+  border-radius: 4px;
+}
+
+.info-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-box ul li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.info-box ul li::before {
+  content: "✔";
+  color: #7ff27f;
+  margin-right: 10px;
+}
+
+.stats {
+  background: white;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  bottom: -70px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 10px;
+  border-radius: 10px;
+  border-top: 5px solid #7ff27f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat i {
+  font-size: 28px;
+  color: #7ff27f;
+  margin-bottom: 8px;
+}
+
+.stat h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.stat p {
+  font-size: 13px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .recruitment-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .left-panel,
+  .right-panel {
+    width: 100%;
+  }
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+}
